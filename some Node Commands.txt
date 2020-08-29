@@ -3,7 +3,9 @@ npm init -y  (init npm with default config of package.json)
 
 // To start server after every change in the code
 >>npm start
->>node server.js
+
+//To install unit testing framework JEST for javascript
+>>npm install --save-dev jest
 
 //No need to repeat those 2 commands if we use nodemon package
 //To install

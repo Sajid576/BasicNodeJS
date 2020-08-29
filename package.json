@@ -1,10 +1,12 @@
+ 
 {
   "name": "rest-shop",
   "version": "1.0.0",
   "description": "A Node.js RESTful API Tutorial Project (Build a simple shop API)",
   "main": "server.js",
   "scripts": {
-    "start": "nodemon server.js"
+   
+    "test":"jest"
   },
   "keywords": [
     "node",
@@ -20,6 +22,7 @@
     "http": "0.0.1-security"
   },
   "devDependencies": {
+    "jest": "^26.4.2",
     "nodemon": "^2.0.4"
   }
 }
