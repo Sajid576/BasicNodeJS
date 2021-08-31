@@ -2,7 +2,7 @@
 'scope' bolte bujhai 'duniya'. 
 
 
-amader js ultimate parent holo 'window object' ba 'global object'. 
+kono js program a ultimate parent holo 'window object' ba 'global object'. 
 etar under-a amader shob kisu thake
 
 'myFunc' holo 'global object' er child.
@@ -10,9 +10,8 @@ etar under-a amader shob kisu thake
 'y' variable ta 'myFunc' er variable
 
 
-'parent' tar 'child' k shob kisu diye rakhse.
-mane child, taar parent er jinish pati access,modify korte parbe.
-kintu 'child' er jinish er upor parent er kono right nai.
+child taar parent er jinish pati access,modify korte parbe.
+kintu 'child' er jinish k parent access korte parbe na.
 
 
 e jonnoi 'myFunc' er scope thike 'x' k access korte partesi.
