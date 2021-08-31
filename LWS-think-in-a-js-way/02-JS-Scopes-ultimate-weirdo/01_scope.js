@@ -14,7 +14,7 @@ child taar parent er jinish pati access,modify korte parbe.
 kintu 'child' er jinish k parent access korte parbe na.
 
 
-e jonnoi 'myFunc' er scope thike 'x' k access korte partesi.
+e jonnoi 'myFunc' er scope thike 'x' & 'y' k access korte partesi.
 kintu global scope thike 'y' k access korte partesi na. 
 ejonnoi global scope a lekha 'console.log(`y=${y}`);' error throw kore.
 
