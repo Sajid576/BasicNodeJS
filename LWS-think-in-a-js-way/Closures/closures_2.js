@@ -8,7 +8,6 @@ var num2 = 3;
 
 var sum = function () {
     // var num2 = 3;
-
     var num3 = 5;
     return function () {
         return num1 + num2;
@@ -17,7 +16,18 @@ var sum = function () {
 
 var myFunc = sum();
 
-console.dir(myFunc);
+console.log(myFunc);
+var mul = function () {
+    
+    var num3 = 5;
+    return function () {
+        return num1 * num3;
+    }
+}
+
+var myFunc = mul();
+
+console.log(myFunc);
 
 // 'num2' -> global hole -> global scope
 // 'num2' -> global na, but bairer (outer) func -> closure scope
