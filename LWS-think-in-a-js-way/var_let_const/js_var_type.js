@@ -20,19 +20,19 @@ if(true){
     var x='var type redefined';  // will work
 }
 console.log(x);  //will work
-if(true){
-    let y='let type';
-     y='let type changed';  // will work
-    let y='let type redefined';   // thorws error
-    console.log(y);  // will work
-}
-console.log(y); //throw error as y is not defined.
+// if(true){
+//     let y='let type';
+//      y='let type changed';  // will work
+//     let y='let type redefined';   // thorws error
+//     console.log(y);  // will work
+// }
+// console.log(y); //throw error as y is not defined.
 
-if (true){
-    const z="this is const";
-    z="lol"  // throws error
-    const z="this is const again"; //throws error
-    console.log(z);  // will work
-}
-console.log(z);  // throws error
+// if (true){
+//     const z="this is const";
+//     z="lol"  // throws error
+//     const z="this is const again"; //throws error
+//     console.log(z);  // will work
+// }
+// console.log(z);  // throws error
 

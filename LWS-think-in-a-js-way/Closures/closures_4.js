@@ -17,28 +17,28 @@ In other words, these functions 'remember' the environment in which they were cr
 // eikhane num1,num2 -> global scope a thakbe
 
 
-//  shift+alt+A -> multi line comment shortcut
 
-var num1 = 2;
-var num2 = 3;
+// //var num1 = 2;
+// //var num2 = 3;
 
 // let num1 = 2;
-// let num2 = 3;
+//  let num2 = 3;
 
-//  var -> global scope
-// let -> closure scope
+// //  var -> global scope
+// // let -> script  scope 
 
 
-var sum = function () {
+// var sum = function () {
 
-    return function () {
-        return num1 + num2;
-    }
-}
+//     return function () {
+//         return num1 + num2;
+//     }
+// }
 
-var myFunc = sum();
+// var myFunc = sum();
 
-console.dir(myFunc);
+// console.dir(myFunc);
+
 
 
 
@@ -48,8 +48,6 @@ console.dir(myFunc);
 // num1,num2 -> closure scope a thakbe
 
 
-
-/*
 (function () {
 
     var num1 = 2;
@@ -68,4 +66,4 @@ console.dir(myFunc);
     console.dir(myFunc);
 
 })();
- */
+ 

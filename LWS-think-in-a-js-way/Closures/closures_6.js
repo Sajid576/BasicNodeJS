@@ -1,8 +1,7 @@
 // 10.closures_6.js
 console.log(`10.closures_6.js`);
+// Asynchronous case:
 
-// etto dekhsilam 'synchronous' er khketre closure kivabe kaaj kore
-// ebar dekhbo 'asynchronous' er khetre closure kmne kaaj kore
 
 var a;
 
@@ -13,7 +12,7 @@ function async_closure() {
         console.log(a);
     }
 
-    setTimeout(myFunc, 3000);
+    setTimeout(myFunc, 3000);   //it sends the 'myFunc' function to another thread and come back to the main thread after 3 sec
     console.dir(myFunc);
 }
 
@@ -21,7 +20,7 @@ async_closure();
 a = 20;
 
 // 3 second gap
-// ei gap er moddhe program 21 nmbr line(a=20) a chole ashe
+// ei gap er moddhe program 20 nmbr line(a=20) a chole ashe
 // ebong a er value chng hoye jai
 
 //  closure -> variable er 'reference' dhore rakhe, not the exact 'value'

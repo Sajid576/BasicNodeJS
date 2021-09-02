@@ -11,7 +11,6 @@ function stopWatch() {
     return getDelay;
 }
 
-
 var timer = stopWatch();
 
 timer();
@@ -21,7 +20,11 @@ for (var i = 0; i < 100000000; i++) {
 }
 
 timer();
-
+/**
+ * JS  automatically collects the garbage but in some * rare situation  JS doesn't collect garbage. 
+ * For example,  in above situation , the garbage collector won't collect garbage of closures variable because JS will think that it might be used in later portion of the script.So, programmer can manually optimize the performance by clearing the garbage( timer=null  ).
+ * 
+ */
 
 
 
