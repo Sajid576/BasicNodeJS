@@ -1,5 +1,5 @@
-// 10.closures_7.js
-console.log(`10.closures_7.js`);
+// vid -> 51 min 00 sec
+console.log(`closures_7.js`);
 
 // Closure functionality in case of sending request to the API
 

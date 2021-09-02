@@ -1,5 +1,5 @@
-//  10.closures_3.js
-console.log('10.closures_3.js');
+//  closures_3.js
+console.log('closures_3.js');
 
 
 

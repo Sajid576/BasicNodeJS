@@ -1,11 +1,12 @@
-//  10.closures_5.js
-console.log('10.closures_5.js');
+//  closures_5.js
+console.log('closures_5.js');
 
 function stopWatch() {
     var startTime = Date.now();    
 
     function getDelay() {
-        console.log(Date.now() - startTime);
+        var endTime = Date.now();
+        console.log(endTime - startTime);
     }
 
     return getDelay;
@@ -26,5 +27,8 @@ timer();
  * 
  */
 
+console.dir(timer)
+
+// closure er moddhe 'startTime' er ref chilo bole amra bar bar 'getDelay' takey use korte partesi
 
 

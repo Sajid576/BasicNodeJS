@@ -1,5 +1,5 @@
-//  10.closures_4.js
-console.log('10.closures_4.js');
+//  vid -> 21 min 50 sec
+console.log('closures_4_1.js');
 
 
 /*
@@ -9,12 +9,18 @@ In other words, these functions 'remember' the environment in which they were cr
 - Mozilla Documentation (2016)
 */
 
+// global variable gular 'closer' a ashar kono dorkar nai... karon egula k emnitei access korar jacche
+// 'enclosing scope' a j variables gula thakbe... tader khetre 'closure' concept na ashe
+
+
 // 'enclosing scope' - bolte ki bujhai ?? sheta janbo ebar
 
 
 // ------------------------------------------------------------------
 // nicher code ta eikhane open vabe ase
 // eikhane num1,num2 -> global scope a thakbe
+// tobey num1,num2 er type 'let' hole era tokhn global scope a thake na (-_-)
+
 
 
 
@@ -47,7 +53,7 @@ In other words, these functions 'remember' the environment in which they were cr
 // enclosing scope
 // num1,num2 -> closure scope a thakbe
 
-
+/*
 (function () {
 
     var num1 = 2;
@@ -66,4 +72,4 @@ In other words, these functions 'remember' the environment in which they were cr
     console.dir(myFunc);
 
 })();
- 
+*/
