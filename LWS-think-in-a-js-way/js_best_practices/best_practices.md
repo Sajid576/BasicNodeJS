@@ -1,9 +1,9 @@
 1) Meaningful Variable Naming:
 ```
-Bad practice:
+Bad :
 let dayssl =10
 
-Good practice:
+Good:
 const MAX_ALLOWED_LOGIN=30;
 
 let daysSinceLastLogin =10; 
@@ -11,11 +11,11 @@ let daysSinceLastLogin =10;
 let isUserLoggedIn=daysSinceLastLogin < MAX_ALLOWED_LOGIN;
 
 ```
-2) Avoid extra word in varaible
+2) Avoid extra word in variable
 ```
-bad:
+Bad:
 let nameValue
-good:
+Good:
 
 let name;
 
@@ -24,7 +24,7 @@ let name;
 ```
 3) No need to remember the purpose of the variable(self explainatory)
 ```
-bad:
+Bad:
 products =["A", "B", "C", "D", "E", "F"]
 products.forEach((p)=>{
         doSomething()
@@ -40,16 +40,16 @@ products.forEach((product)=>{
 ```
 4) No Need to add unnecessary context:
 ```
-bad:
+Bad:
     products={
             productId:"12",
-            "productName:"A"
+            productName:"A"
     }
 
-good:
+Good:
 products={
             id:"12",
-            "name:"A"
+            name:"A"
     }
 
 ```
@@ -69,7 +69,7 @@ function sendEmailToUser()
 6) Avoid too many arguments in fucntion
 ```
 if you use too many arguments,test case writing will be tough
-bad:
+Bad:
 function getProducts(fields,fromDate,toDate){
     // implementations
 }
@@ -84,6 +84,8 @@ function getProducts({fields,fromDate,toDate})
 
 7) Use default arguments ,not conditionals:
 ```
+Bad:
+
 function createProduct(type){
         const shapeType = type || "circle";
 }
@@ -118,9 +120,41 @@ function createFile(name){
 
 ```
 - More parameters in the function ==> problem for QA testers
-- More functions ==> Not a problem
+- Refactoring a single function to generate more functions ==> Not a problem
 
-9) 
+9) Multiple tasks should not be assigned to a single function:
+ ```
+ Bad: Below code is performing 2 actions,
+ one is verifying the user and other one is notifying the verified user.
+
+function notifyUsers(users){
+        users.forEach((user)=>{
+            const userRecord = database.lookup(user);
+            if(userRecord.isVerified()){
+                notify(user);
+            }
+        })
+}
+
+Good:
+We can refactor the function into 2 functions for removing tightly coupled.
+function notifyVerifiedUsers(users){
+
+}
+function isUserVerified(user){
+
+}
 
 
+ ```
+10) Always check the type strongly
+```
+val=123;
+if(val === 123){ console.log("dhukbe")}
+if(val === "123"){ console.log("dhukbe na")}
+if(val == "123"){ console.log("dhukbe")}
+
+
+```
+11) 
 
