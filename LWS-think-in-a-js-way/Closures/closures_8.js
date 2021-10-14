@@ -1,7 +1,6 @@
+
 // vid -> 55 min 05 sec
-
 console.log(`closures_8.js`);
-
 // onk job interview te eta jiggesh kore
 
 // closure jokhn ekta loop er moddhe kaaj kore... tokhn onk shomoy amra ei problem tai pori
@@ -12,7 +11,7 @@ for (let i = 0; i < 3; i++) {
     const myFunc = () => {
         console.log(i)
     }
-    console.log(i);
+    //console.log(i);
     console.dir(myFunc);
     setTimeout(myFunc, 3000);
 } 
