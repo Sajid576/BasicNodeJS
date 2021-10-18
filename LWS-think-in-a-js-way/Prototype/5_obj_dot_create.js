@@ -13,12 +13,12 @@ const personMethods = {
 
 
 function Person(name, age) {
-    let person = Object.create(personMethods);
+    let p = Object.create(personMethods);
 
-    person.name = name;
-    person.age = age;
+    p.name = name;
+    p.age = age;
 
-    return person;
+    return p;
 }
 
 
