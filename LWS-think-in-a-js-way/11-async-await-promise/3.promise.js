@@ -1,4 +1,4 @@
-// node LWS-think-in-a-js-way/async-await-promise/3.promise.js
+// node LWS-think-in-a-js-way/11-async-await-promise/3.promise.js
 // vid -> 30 min 45 sec
 
 // 'promise' use hoy muloto 

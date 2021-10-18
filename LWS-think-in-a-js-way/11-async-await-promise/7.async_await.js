@@ -1,4 +1,4 @@
-// node LWS-think-in-a-js-way/async-await-promise/7.async_await.js
+// node LWS-think-in-a-js-way/11-async-await-promise/7.async_await.js
 
 const hasMeeting = false;
 

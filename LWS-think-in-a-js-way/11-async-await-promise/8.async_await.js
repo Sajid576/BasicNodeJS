@@ -1,4 +1,4 @@
-// node LWS-think-in-a-js-way/async-await-promise/8.async_await.js
+// node LWS-think-in-a-js-way/11-async-await-promise/8.async_await.js
 
 
 // promise a reject er concept ta 'async-await' diye kivabe implement kore sheta dekhano hoise

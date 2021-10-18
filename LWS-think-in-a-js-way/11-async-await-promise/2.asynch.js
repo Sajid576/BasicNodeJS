@@ -1,4 +1,4 @@
-// node LWS-think-in-a-js-way/async-await-promise/2.asynch.js
+// node LWS-think-in-a-js-way/11-async-await-promise/2.asynch.js
 
 /*
 take order -> process order -> order complete
