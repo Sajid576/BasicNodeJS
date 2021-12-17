@@ -28,7 +28,7 @@ var closureExists = function () {
 }
 
 
-console.dir(myFunc);
+// console.dir(myFunc);
 var funcNo  = noClosure();
 var funcYes = closureExists();
 
